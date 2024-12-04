@@ -1,0 +1,9 @@
+.main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container > div {
+  width: 59%;
+}

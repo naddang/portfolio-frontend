@@ -1,0 +1,161 @@
+{
+  "title": "샘플데이터",
+  "author": "생각후말하기",
+  "main_character": 1,
+  "first_senario": 0,
+  "characters": [
+    {
+      "name": "여성 캐릭터 이름",
+      "age": 17,
+      "sex": "F",
+      "description": "캐릭터 설명",
+      "birthday": "2007-05-21",
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "personality_type": "ENFP",
+      "hobbies": [
+        "애니메이션",
+        "만화보기",
+        "그림"
+      ],
+      "physical_traits": [
+        "분홍색 긴 머리, 갈색 브릿지가 있음",
+        "눈이 큼",
+        "158cm의 키"
+      ],
+      "special_abilities": [],
+      "initial_affection": 0,
+      "affiliation": "캐릭터의 소속",
+      "created_by": 1
+    },
+    {
+      "name": "남성 캐릭터 이름",
+      "age": 20,
+      "sex": "M",
+      "description": "캐릭터 설명",
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "personality_type": "INFP",
+      "hobbies": [
+        "애니메이션",
+        "만화보기",
+        "게임"
+      ],
+      "physical_traits": [
+        "짧은 머리",
+        "흑발",
+        "175cm의 키"
+      ],
+      "special_abilities": [],
+      "initial_affection": 0,
+      "affiliation": "캐릭터 소속",
+      "created_by": 1
+    }
+  ],
+  "background_images": [
+    {
+      "title": "벚꽃학원",
+      "url": "https://via.placeholder.com/150",
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "created_by": 1
+    },
+    {
+      "title": "공원",
+      "url": "https://via.placeholder.com/150",
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "created_by": 1
+    },
+    {
+      "title": "카페",
+      "url": "https://via.placeholder.com/150",
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "created_by": 1
+    }
+  ],
+  "senarios": [
+    {
+      "title": "첫만남",
+      "description": "첫만남 설명",
+      "text_list": [
+        "최초 등장 텍스트",
+        "안녕하세요! 저는 {{1.name}}이에요!",
+        "만나서 반가워요!"
+      ],
+      "characters": [
+        0, 1
+      ],
+      "selections": [
+        {
+          "text": "누구세요?",
+          "effect": "미정",
+          "next_senario": 1
+        },
+        {
+          "text": "안녕하세요. 만나서 반가워요.",
+          "effect": "미정",
+          "next_senario": 2
+        }
+      ],
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "created_by": 1
+    },
+    {
+      "title": "데이트",
+      "description": "데이트 설명",
+      "text_list": [
+        "데이트 관련 텍스트",
+        "오늘은 날씨가 좋네요.",
+        "함께 데이트를 즐기는 것도 좋겠죠?"
+      ],
+      "characters": [
+        0, 1
+      ],
+      "selections": [
+        {
+          "text": "그러네요. 공원에서 산책할까요?",
+          "effect": "미정",
+          "next_senario": 1
+        },
+        {
+          "text": "그렇지 않은데요? 카페에 가서 커피나 한 잔 하러 가요.",
+          "effect": "미정",
+          "next_senario": 2
+        }
+      ],
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "created_by": 1
+    },
+    {
+      "title": "이별",
+      "description": "이별 설명",
+      "text_list": [
+        "이별 관련 텍스트",
+        "안녕히 가세요.",
+        "다음에 또 만나요."
+      ],
+      "characters": [
+        0, 1
+      ],
+      "selections": [
+        {
+          "text": "다시는 만나지 말아요.",
+          "effect": "미정",
+          "next_senario": 1
+        },
+        {
+          "text": "다음에 또 만나요.",
+          "effect": "미정",
+          "next_senario": 2
+        }
+      ],
+      "created_at": "2024-09-04T11:30:00Z",
+      "updated_at": "2024-09-04T11:30:00Z",
+      "created_by": 1
+    }
+  ]
+}

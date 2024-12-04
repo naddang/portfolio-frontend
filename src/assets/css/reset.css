@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* import */
+@import url('../fonts/NanumSquareNeo.css');
+/* 초기화 */
+* { margin:0; padding:0; -webkit-text-size-adjust:none; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+*:before, *:after { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; /*font:inherit; */vertical-align:baseline; border:0; background:transparent; }
+@media print { @page { margin:0; }
+ }
+/* 기본 폰트 및 사이즈 설정 */
+html, body { width:100%; height:100%; }
+html { font-size:80%; overflow:auto; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+body { min-width:260px; min-width:1200px; font-size:1.3em; line-height:1.8; letter-spacing:-0.03em; color:#666; background-color:#fff; }
+body { font-family:'NanumSquareNeo','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',Dotum,Verdana,Arial,helvetica,clean,sans-serif; }
+input, button, select, textarea { font-size:0.95em; font-family:'NanumSquareNeo','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',Dotum,Verdana,Arial,helvetica,clean,sans-serif; }
+
+body.font-loaded { font-family:'Jua-Regular','NanumSquareNeo','SDGothicNeoa','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',Dotum,Verdana,Arial,helvetica,clean,sans-serif; }
+body.font-loaded input, body.font-loaded button, body.font-loaded select, body.font-loaded textarea { font-family:'NanumSquareNeo','SDGothicNeoa','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',Dotum,Verdana,Arial,helvetica,clean,sans-serif; }
+@media (max-width:300px) { html { font-size:60%; }
+ }
+@media (min-width:301px) { html { font-size:65%; }
+ }
+@media (min-width:500px) { html { font-size:65%; }
+ }
+@media (min-width:700px) { html { font-size:70%; }
+ }
+@media (min-width:1200px) { html { font-size:80%; }
+ }
+
+/* scrollbar */
+body { scrollbar-3dLight-Color:#efefef; scrollbar-arrow-color:#134AA9; scrollbar-base-color:#efefef; scrollbar-Face-Color:#134AA9; scrollbar-Track-Color:#efefef; scrollbar-DarkShadow-Color:#efefef; scrollbar-Highlight-Color:#efefef; scrollbar-Shadow-Color:#efefef }
+body::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5; }
+body::-webkit-scrollbar {width:12px;height:12px;background-color:#143671; }
+body::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#134AA9; }
+body::-webkit-scrollbar-corner {background-color:#134AA9; }
+
+div::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5; }
+div::-webkit-scrollbar {width:12px;height:12px;background-color:#143671; }
+div::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#134AA9; }
+div::-webkit-scrollbar-corner {background-color:#134AA9; }
+
+.map-frame::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5; }
+.map-frame::-webkit-scrollbar {width:12px;height:12px;background-color:#134AA9; }
+.map-frame::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#134AA9; }
+.map-frame::-webkit-scrollbar-corner {background-color:#134AA9; }
+
+/* 프린트시 배경이미지 출력 */
+* { -webkit-print-color-adjust:exact; }
+
+/* html5 호환 설정*/
+article, aside, canvas, details, figcaption, figure, main, footer, header, hgroup, menu, nav, section, summary { display:block; }
+address { font-style:normal; display:inline; }
+table { width:100%; border-collapse:collapse; border-spacing:0; }
+table, caption, tbody, tfoot, thead, tr, th, td { outline:0; background:transparent; font-size:100%; }
+
+nav, ul, ol { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:""; content:none; }
+
+hr, hr.dached { display:block; height:1px; border:0; padding:0; }
+hr { border-top:1px solid #eee; margin:2.5em 0 }
+hr.dached { border-top:1px dashed #ddd; margin:2.5em 0 1.8em }
+
+/* 글자 속성 */
+/* a:link, a:visited, a:hover, a:active순서로 작성 */
+a, a:link { color:#555; text-decoration:none; cursor:pointer; }
+a:visited, a.visited, a.visited:visited {text-decoration:none; }
+a:hover, a.visited:hover, a:active {text-decoration:none;}
+a:focus { text-decoration:none; }
+
+/* LIST 요소 기본 */
+ol.onum li { list-style-type:decimal }
+.onum { padding-left:22px; }
+
+/* Form 요소들 기본 */
+/* input, button, select, textarea { font-family:inherit; } */
+
+input, label, select, button, textarea { box-sizing:border-box; }
+fieldset { padding:0px; margin:0px; border:0px; }
+legend { display:none; }
+
+input { /* border:1px solid #ddd; line-height:60px; height:60px; line-height:60px; */vertical-align:middle; }
+input[type="radio"],input[type="checkbox"] { border:none; padding:0; margin:0; vertical-align:middle; }
+/* input[type="file"] { border:0; padding:0; margin:0; height:auto; } */
+input.text,input.password { border-left:1px solid #cbcbcb; border-top:1px solid #cbcbcb; border-right:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; background:#f8f8f8; height:28px; line-height:28px; padding:0 5px; }
+input.file { border:1px solid #ccc; height:16px; padding:2px; font-size:100%; line-height:110%; }
+input.image,input.radio,input.checkbox { border:0px !important; vertical-align:middle; padding:0px; margin:0px; }
+input.num { text-align:right; border:1px solid #ccc; height:16px; padding:2px; font-size:100%; line-height:110%; }
+input.readonly { background-color:#f7f7f7; }
+textarea { border:1px solid #ccc; padding:2px 5px; resize:vertical; }
+select { border:1px solid #ccc; height:30px; line-height:30px; vertical-align:middle; line-height:1; min-width:50px; }
+
+
+/* 이미지 요소 기본 */
+img { vertical-align:top; }

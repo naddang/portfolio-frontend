@@ -1,0 +1,30 @@
+/*(font-family 'NanumSquareNeo', sans-serif;);*/
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: local('NanumSquareNeo Regular'), local('NanumSquareNeoR');
+	src: local(※),
+	url(NanumSquareNeoR.otf) format("opentype"),
+}
+
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local('NanumSquareNeo Medium'), local('NanumSquareNeoB');
+	src: local(※),
+	url(NanumSquareNeoB.otf) format("opentype"),
+}
+
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
+	src: local('NanumSquareNeo Bold'), local('NanumSquareNeoEB');
+	src: local(※),
+	url(NanumSquareNeoEB.otf) format("opentype"),
+}
