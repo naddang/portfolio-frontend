@@ -22,7 +22,7 @@ time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; /*font
 /* 기본 폰트 및 사이즈 설정 */
 html, body { width:100%; height:100%; }
 html { font-size:80%; overflow:auto; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
-body { min-width:260px; min-width:1200px; font-size:1.3em; line-height:1.8; letter-spacing:-0.03em; color:#666; background-color:#fff; }
+body { max-width:100%;min-width:260px; min-width:1200px; font-size:1.3em; line-height:1.8; letter-spacing:-0.03em; color:#666; background-color:#fff; }
 body { font-family:'NanumSquareNeo','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',Dotum,Verdana,Arial,helvetica,clean,sans-serif; }
 input, button, select, textarea { font-size:0.95em; font-family:'NanumSquareNeo','Apple SD Gothic Neo','Malgun Gothic','맑은 고딕','돋움',Dotum,Verdana,Arial,helvetica,clean,sans-serif; }
 
@@ -40,7 +40,7 @@ body.font-loaded input, body.font-loaded button, body.font-loaded select, body.f
  }
 
 /* scrollbar */
-body { scrollbar-3dLight-Color:#efefef; scrollbar-arrow-color:#134AA9; scrollbar-base-color:#efefef; scrollbar-Face-Color:#134AA9; scrollbar-Track-Color:#efefef; scrollbar-DarkShadow-Color:#efefef; scrollbar-Highlight-Color:#efefef; scrollbar-Shadow-Color:#efefef }
+/* body { scrollbar-3dLight-Color:#efefef; scrollbar-arrow-color:#134AA9; scrollbar-base-color:#efefef; scrollbar-Face-Color:#134AA9; scrollbar-Track-Color:#efefef; scrollbar-DarkShadow-Color:#efefef; scrollbar-Highlight-Color:#efefef; scrollbar-Shadow-Color:#efefef }
 body::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5; }
 body::-webkit-scrollbar {width:12px;height:12px;background-color:#143671; }
 body::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#134AA9; }
@@ -54,7 +54,7 @@ div::-webkit-scrollbar-corner {background-color:#134AA9; }
 .map-frame::-webkit-scrollbar-track {-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:#F5F5F5; }
 .map-frame::-webkit-scrollbar {width:12px;height:12px;background-color:#134AA9; }
 .map-frame::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);background-color:#134AA9; }
-.map-frame::-webkit-scrollbar-corner {background-color:#134AA9; }
+.map-frame::-webkit-scrollbar-corner {background-color:#134AA9; } */
 
 /* 프린트시 배경이미지 출력 */
 * { -webkit-print-color-adjust:exact; }

@@ -1,3 +1,4 @@
+/* 메인 */
 .main_container {
   display: flex;
   justify-content: center;
@@ -6,4 +7,93 @@
 
 .main_container > div {
   width: 59%;
+}
+
+/* 디자인 페이지 */
+.design-page {
+  padding: 2rem;
+}
+
+.html-content {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* 갤러리 게시판 */
+.bbs {
+  padding: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-item p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* 로그인 */
+.login, .signup {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.login h1, .signup h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login form div, .signup form div {
+  margin-bottom: 1rem;
+}
+
+.login label, .signup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.login input, .signup input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login button, .signup button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.login button:hover, .signup button:hover {
+  background-color: #0056b3;
 }
