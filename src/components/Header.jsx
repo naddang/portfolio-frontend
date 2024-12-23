@@ -24,7 +24,6 @@ function Header() {
     const getMenus = async () => {
       const menuData = await fetchMenus();
       if (menuData && Array.isArray(menuData.list)) {
-        console.log('메뉴: ', menuData); // 응답 데이터 확인
         setMenus(menuData.list);
       } else {
         setMenus([]); // 배열이 아닌 경우 빈 배열로 설정

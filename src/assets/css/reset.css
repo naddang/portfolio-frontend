@@ -57,8 +57,6 @@ div::-webkit-scrollbar-corner {background-color:#134AA9; }
 .map-frame::-webkit-scrollbar-corner {background-color:#134AA9; } */
 
 /* 프린트시 배경이미지 출력 */
-* { -webkit-print-color-adjust:exact; }
-
 /* html5 호환 설정*/
 article, aside, canvas, details, figcaption, figure, main, footer, header, hgroup, menu, nav, section, summary { display:block; }
 address { font-style:normal; display:inline; }
